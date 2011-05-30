@@ -65,11 +65,18 @@ def select_blog(blogger_service):
     query.feed = '/feeds/default/blogs'
     feed = blogger_service.Get(query.ToUri())
 
-    print feed.title.text
-    for i in xrange(len(feed.entry)):
+    print "\n%s" % (feed.title.text,)
+    blog_limit = len(feed.entry)
+    for i in xrange(blog_limit):
         print "\t (%d) " % (i+1,) + feed.entry[i].title.text
-    selection = int(raw_input("Select blog: ")) - 1
-    blog = feed.entry[selection]
+    selection = -1
+    while selection < 0 or selection > blog_limit:
+        try:
+            selection = int(raw_input("Select blog: "))
+            blog = feed.entry[selection - 1]
+        except:
+            pass
+
     return blog.GetSelfLink().href.split("/")[-1]
 
 def parse_argv():
