@@ -19,3 +19,10 @@ http://www.freewisdom.org/projects/python-markdown/
 
 Google Data Python library
 http://code.google.com/apis/gdata/articles/python_client_lib.html#library
+
+Suggested Use
+-------------
+
+Git is configured to ignore the entries/ directory. I've setup a separate
+Git repository that houses my entries within the entries directory. Doogie
+will handle git commits for you (eventually).
