@@ -1,6 +1,8 @@
 Doogie
 ======
 
+Overview
+--------
 Growing up, I watched Doogie Howser, MD. I watched him writing 
 his journal entries in a simple text editor and saving them
 at the end of every episode. doogie.py is an attempt to bring
@@ -9,7 +11,7 @@ the same time allowing me to write them in a simplified format
 such as markdown in my favorite editor vim.
 
 Requirements
-============
+------------
 
 Doogie requires two non-standard libraries to function:
 python-markdown

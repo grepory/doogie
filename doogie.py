@@ -1,10 +1,9 @@
 #!/usr/bin/python
 
 # Doogie - Markdown CLI client for blogger.google.com
-# Copyright 2011 Greg Poirier - Some rights reserved
+# Copyright (c) 2011 Greg Poirier - Some rights reserved
 # See LICENSE for details
 
-from sys import exit
 from os.path import exists
 from os import system
 from gdata import service
